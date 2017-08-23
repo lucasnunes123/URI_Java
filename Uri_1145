@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Uri_1145 {
+
+    public static void main(String[] args) {
+        
+        Scanner tecla = new Scanner(System.in);
+        
+        int x = tecla.nextInt();
+        int y = tecla.nextInt();
+        
+        int cont = 1;
+        for(int i = 1; i <= y; i++) {
+            System.out.print(i);
+            if(cont==x) {
+                System.out.println();
+                cont = 0;
+            }
+            else {
+                if(i==y) System.out.println();
+                else System.out.print(" ");
+            }
+            cont++;
+        }
+        
+    }
+    
+}
