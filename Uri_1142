@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+public class Uri_1142 {
+    public static void main(String[] args){
+        Scanner tecla = new Scanner(System.in);
+         int N;
+         N = tecla.nextInt();
+         for (int i = 1; i <= (4*N - 1); i+=4){ 
+             for (int j = i; j <= i+2; j++) {
+                System.out.print(j+" ");
+            }
+
+            System.out.println("PUM");
+
+        }
+
+    }
+
+}
+
