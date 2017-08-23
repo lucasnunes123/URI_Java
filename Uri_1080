@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Uri_1080 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int N,maior = 0,possicao = 0;
+       for (int i = 1;i <= 100;i++){
+           N=tecla.nextInt();
+           if (N > maior){
+               maior = N;
+               possicao = i;
+           }
+       }
+     System.out.println(maior);
+     System.out.println(possicao);
+    }
+}
