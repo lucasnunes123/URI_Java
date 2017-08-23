@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class Uri_1146 {
+
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int valorX;
+        while (true) {
+            valorX = tecla.nextInt();
+            if (valorX == 0) {
+                break;
+            }
+            for (int i = 1; i <= valorX; i++) {
+                System.out.print(i);
+                if (i == valorX) {
+                    System.out.println();
+                } else {
+                    System.out.print(" ");
+                }
+            }
+        }
+    }
+}
