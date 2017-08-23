@@ -1,0 +1,28 @@
+//URI_1044
+import java.util.Scanner;
+
+
+public class uri1044 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int A,B;
+        
+        A = tecla.nextInt();
+        B = tecla.nextInt();
+        
+        if (A > B){
+            if (A%B == 0){
+                System.out.println("Sao Multiplos");
+            }else {
+                System.out.println("Nao sao Multiplos");
+            }
+        }
+       if (A < B){
+           if (B%A == 0){
+               System.out.println("Sao Multiplos");
+           }else {
+               System.out.println("Nao sao Multiplos");
+           }
+        }
+    }
+}
