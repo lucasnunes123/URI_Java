@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class Uri_1113 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int X,Y;
+        while (true){
+            X = tecla.nextInt();
+            Y = tecla.nextInt();
+            if (X == Y){
+                break;
+            }else if (X > Y){
+                System.out.println("Decrescente");
+            }else if(X < Y){
+                System.out.println("Crescente");
+            }
+        }
+    }
+}
