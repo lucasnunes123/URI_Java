@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Uri_1150 {
+
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);        
+        int X,Y,at,num,soma;
+        
+        X = tecla.nextInt();
+        Y = X;
+        while(Y<=X) Y = tecla.nextInt();
+         at = X;
+         num = 0;
+         soma = 0;
+        while(soma<Y) {
+            soma += at;
+            at++;
+            num++;
+        }      
+        System.out.println(num);
+       }   
+}
