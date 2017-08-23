@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+
+
+public class uri1008 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int a,b,s,soma,d;
+        a = tecla.nextInt();
+        b = tecla.nextInt();
+        s = tecla.nextInt();
+        soma = (a + b + s*(a - b));
+        d = soma/2;
+        System.out.printf("%d",d);
+        
+    }
+   
+}
