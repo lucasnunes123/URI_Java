@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+
+public class Uri_1094 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int N,quantia,TC = 0,TR = 0,TS = 0,TG = 0;
+        double PC, PS, PR;
+        String tipo;
+        N = tecla.nextInt();
+        for (int i = 1;i <= N;i++){
+            quantia = tecla.nextInt();
+            tipo = tecla.nextLine();
+            if (tipo.contains("C")){
+                TC = TC + quantia;          
+            }else if(tipo.contains("R")){
+                TR = TR + quantia;
+            }else if(tipo.contains("S")){
+                TS = TS + quantia;
+            }
+            TG += quantia;
+        }
+        PC = (100.0*TC)/TG;
+        PR = (100.0*TR)/TG;
+        PS = (100.0*TS)/TG;
+        
+        System.out.println("Total: " + TG + " cobaias");
+        System.out.println("Total de coelhos: "+TC);
+        System.out.println("Total de ratos: "+TR);
+        System.out.println("Total de sapos: "+TS);
+        System.out.printf("Percentual de coelhos: %.2f",PC);
+        System.out.print(" %\n");
+        System.out.printf("Percentual de ratos: %.2f",PR);
+        System.out.print(" %\n");
+        System.out.printf("Percentual de sapos: %.2f",PS);
+        System.out.print(" %\n");
+      
+    }
+}
