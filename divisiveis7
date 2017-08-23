@@ -1,0 +1,21 @@
+// @author Lucas Nunes GS
+import java.util.Scanner;
+
+public class Lukita {
+    public static void main(String[] args) {
+    Scanner tecla = new Scanner(System.in);
+    int num1,num2;
+    
+    System.out.print("Informe o 1° número: ");
+    num1=tecla.nextInt();
+    System.out.print("Informe o 2° número: ");
+    num2=tecla.nextInt();
+    System.out.println("O(s) número(s) divisível(s) por 7 são");
+    for (int i = num1;i <= num2;i++){
+         if(i%7==0){
+        System.out.println(i);
+         }
+    }
+    }
+    
+}
