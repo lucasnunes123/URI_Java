@@ -1,0 +1,42 @@
+//Uri_1038
+import java.util.Scanner;
+
+public class Uri_1038 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int Quantidade,codigo;
+        double CQ,XS,XB,TS,R,soma;
+        CQ = 4.00;
+        XS = 4.50;
+        XB = 5.00;
+        TS = 2.00;
+        R = 1.50;
+        codigo = tecla.nextInt();
+        Quantidade = tecla.nextInt();
+        
+        switch (codigo) {
+            case 1:
+                soma = Quantidade*CQ;
+                System.out.printf("Total: R$ %.2f\n",soma);
+                break;
+            case 2:
+                soma = Quantidade*XS;
+                System.out.printf("Total: R$ %.2f\n",soma);
+                break;
+            case 3:
+                soma = Quantidade*XB;
+                System.out.printf("Total: R$ %.2f\n",soma);
+                break;
+            case 4:
+                soma = Quantidade*TS;
+                System.out.printf("Total: R$ %.2f\n",soma);
+                break;
+            case 5:
+                soma = Quantidade*R;
+                System.out.printf("Total: R$ %.2f\n",soma);
+                break;
+            default:
+                break;
+        }
+    }
+}
