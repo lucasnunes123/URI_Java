@@ -1,0 +1,15 @@
+import java.util.Scanner;
+//Uri_1143
+public class Uri_1143 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int calc,N,calc2;
+        N = tecla.nextInt();
+        for (int i = 1;i <=N;i++){
+            calc = i*i;
+            calc2 = i*i*i; 
+            System.out.printf("%d %d %d\n",i,calc,calc2);
+        
+    }
+}
+}
