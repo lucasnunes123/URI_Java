@@ -11,14 +11,10 @@ public class Uri_1146 {
             if (valorX == 0) {
                 break;
             }
-            for (int i = 1; i <= valorX; i++) {
-                System.out.print(i);
-                if (i == valorX) {
-                    System.out.println();
-                } else {
-                    System.out.print(" ");
+            for (int i = 1; i < valorX; i++) {
+                System.out.print(i+" ");
                 }
-            }
+            System.out.println(valorX);
         }
     }
 }
