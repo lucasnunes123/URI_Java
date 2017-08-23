@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+
+public class NewClass {
+    public static void main(String[] args) {
+ 
+		Scanner input = new Scanner(System.in);
+		double N1, N2, N3, N4;
+		double MEDIA, EXAME;
+
+		N1 = input.nextDouble();
+		N2 = input.nextDouble();
+		N3 = input.nextDouble();
+		N4 = input.nextDouble();
+
+		MEDIA = (N1*2 + N2*3 + N3*4 + N4*1)/10;
+
+		System.out.println("Media: " + (MEDIA));
+
+		if (MEDIA >= 7) {
+			System.out.println("Aluno aprovado.");
+		}
+		else if (MEDIA < 5) {
+			System.out.println("Aluno reprovado.");
+		}
+		else {
+			System.out.println("Aluno em exame.");
+			EXAME = input.nextDouble();
+			System.out.println("Nota do exame: " + (EXAME));
+			System.out.println("Aluno aprovado.");
+			System.out.println("Media final: " + ((EXAME + MEDIA)/2));
+		}
+
+    }
+}
