@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class URi_1095 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int I = 1,J = 60;
+        while (J >= 0){
+            System.out.printf("I=%d J=%d\n",I,J);
+            I+=3;
+            J-=5;
+        }
+        
+        
+    }
+}
