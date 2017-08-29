@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Uri_1157 {
+
+    public static void main(String[] args) {
+    Scanner tecla = new Scanner(System.in);
+    int N;
+    N = tecla.nextInt();
+    for(int i = 1;i <= N;i++){
+        if(N%i==0 || N%i==N){
+            System.out.println(i);
+        }
+    }
+}
+}
