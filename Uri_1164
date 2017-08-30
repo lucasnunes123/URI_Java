@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Uri_1164 {
+    public static void main(String[] args) {
+        Scanner tecla = new Scanner(System.in);
+        int N,X,soma;
+        N = tecla.nextInt();
+        for(int l =0;l<N;l++){
+            soma=0;
+            X = tecla.nextInt();
+            for(int i=1;i<=X/2;i++){
+                if(X%i==0 || X%i==X){
+                    soma = soma +i;
+                }
+            }
+                if(soma==X){
+                    System.out.println(+X+ " eh perfeito");
+                    
+                }else{
+                    System.out.println(+X+ " nao eh perfeito");
+                }
+        }
+    }
+}
